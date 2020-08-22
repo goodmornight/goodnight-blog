@@ -70,7 +70,39 @@ hexo d
 
 4. 可以在github上设置source分支为主分支。其他电脑可以通过github远程仓库拉下来文件，并执行`npm install`，初始化hexo相关依赖，前提在电脑里装好hexo。
 
-5. 每次提交还是先部署，后切换到source分支提交source代码即可。
+5. 完成以上步骤后合并source分支。切换到主分支下，合并source分支。
+
+   ```bash
+   git merge source
+   ```
+
+   
+
+6. 每次还是先部署，后切换source分支提交source代码即可。
+
+# 相关git操作
+
+1. 查看分支：
+
+```bash
+git branch
+```
+
+2. 删除分支：
+
+```bash
+git branch -d source
+```
+
+3. 切换到source分支：
+
+```bash
+git checkout source
+```
+
+
+
+
 
 # 参考链接
 
