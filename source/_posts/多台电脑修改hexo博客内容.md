@@ -78,7 +78,7 @@ hexo d
 
    
 
-6. 每次提交还是先部署，后新建切换source分支提交source代码即可。
+6. 每次还是先部署，后切换source分支提交source代码即可。
 
 # 相关git操作
 
