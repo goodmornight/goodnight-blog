@@ -37,11 +37,11 @@ hexo d
 3. 进行`git commit`，并把修改push到指定的remote branch
 4. 命令执行完成后，到你的github仓库，你会发现master分支上的内容和'.deploy_git'中一样
 
-# 添加到github或其他远程仓库
+# 添加到github或其他远程仓库(初次)
 
 1. 首先，需要新建一个新的git仓库
 
-2. 本地仓库关联github远程仓库，名字取名为`github`
+2. 本地仓库关联github远程仓库，名字取名为`github`，因为默认的origin被hexo占用了。
 
    ```bash
     git remote add github git@github.com:GoodNight-Git/goodnight.git
@@ -80,7 +80,7 @@ hexo d
 
 6. 每次在source分支下操作，以及提交source代码即可。
 
-# 其他电脑使用
+# 其他电脑使用（以后都采用这种方式）
 
 1. 首先要安装git、nodejs和hexo的电脑
 
@@ -96,11 +96,19 @@ hexo d
 
 5. 修改内容后，仍然提交到你的远程仓库。
 
+   ```bash
+   git add .
+   git commit -m '修改备注'
+   git push
+   ```
+
+   
+
 6. 部署
 
-```
-hexo g && hexo d
-```
+   ```bash
+   hexo g && hexo d
+   ```
 
 
 
@@ -122,6 +130,8 @@ git branch -d source
 
 ```bash
 git checkout source
+或者
+git switch source
 ```
 
 
