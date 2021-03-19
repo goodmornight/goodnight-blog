@@ -121,6 +121,3 @@ deploy:
 - type: git
   repo: git@172.81.216.126:/var/repo/goodNight.git
   branch: master
-- type: git
-  repo: git@github.com:goodmornight/goodmornight.github.io.git
-  branch: main
