@@ -148,8 +148,8 @@ jobs:
   }
 }
 ```
-
-
+### 自定义域名访问
+参考：[VuePress项目配置](https://vuepress.vuejs.org/zh/guide/deploy.html#github-pages)
 
 ## github.io域名访问配置
 
